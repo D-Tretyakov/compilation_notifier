@@ -32,10 +32,14 @@ After execution of cmake the next command will be executed that will trigger bot
 To use enotify you need to [create telegram bot](https://core.telegram.org/bots#3-how-do-i-create-a-bot)  
 Then run:
 ```
-enotify -t YOUR_TOKEN -i YOUR_TELEGRAM_ID
+enotify -t YOUR_TOKEN
 ```
 If you don't know your telegram id you can get it with:
 ```
 enotify -g @your_user_name
+```
+Alternatively
+```
+enotify -i YOUR_ID
 ```
 Anfter these steps enotify is ready to use.
