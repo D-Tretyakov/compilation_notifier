@@ -34,7 +34,7 @@ class Config:
 
     @classmethod
     def init_config(cls):
-        cls.config_dir.mkdir(parents=True)
+        cls.config_dir.mkdir(parents=True, exist_ok=True)
 
         data = {
             'token': None,
