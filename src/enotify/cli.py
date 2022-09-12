@@ -27,7 +27,7 @@ def get_id(username):
 
 
 def setup(token=None, user_id=None):
-    Config.store(token, user_id)
+    Config.store(token=token, user_id=user_id)
     print(f'Saved: {Config.get_path()}')
 
 
@@ -60,7 +60,7 @@ def main():
         return
 
     if args.user_id or args.bot_token:
-        setup(args.user_id, args.bot_token)
+        setup(user_id=args.user_id, token=args.bot_token)
         return
 
     notify()
