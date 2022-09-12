@@ -1,6 +1,6 @@
 from time import sleep
 
-from config import Config
+from enotify.config import Config
 
 import requests
 

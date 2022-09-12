@@ -1,7 +1,7 @@
 from argparse import ArgumentParser
 
-from bot import Bot
-from config import Config
+from enotify.bot import Bot
+from enotify.config import Config
 
 
 def notify():
