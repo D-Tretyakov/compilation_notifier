@@ -65,5 +65,5 @@ def main():
 
     notify()
 
-
-main()
+if __name__ == '__main__':
+    main()
