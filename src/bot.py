@@ -4,6 +4,7 @@ from config import Config
 
 import requests
 
+
 class Bot:
     def __init__(self):
         data = Config.read()
@@ -41,7 +42,6 @@ class Bot:
         parsed = response.json()
         if not self.response_ok(parsed):
             return
-
 
     def response_ok(self, parsed):
         status_ok = parsed['ok']
